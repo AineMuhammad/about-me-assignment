@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --blue: #00264f;
+  --text: #1D1D1F;
+  --text-muted: #86868B;
+  --bg: #FCFCFC;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: Manrope;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.47;
+}
+
+.text-main {
+  color: var(--blue) !important;
+}
+
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: color 0.5s ease;
+}
+
+.brand-name:hover {
+  color: var(--blue);
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+
+.nav-link:hover {
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.nav-link.active {
+  color: var(--blue);
+  font-weight: 500;
+  background: rgba(0, 122, 255, 0.1);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--bg) 0%, var(--white) 100%);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  animation: slide-in-left 1.4s ease-out;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  from {
+    transform: translateY(15px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #6db2fb 0%, #08084c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  animation: slide-in-left 1.4s ease-out;
+}
+
+.btn {
+  border-radius: 12px;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.5s ease;
+  border: none;
+  animation: slide-in-top 1.4s ease-out;
+}
+
+.hero-btn-primary {
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 122, 255, 0.3);
+}
+
+.hero-btn-primary:hover {
+  background: white;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 8px rgba(0, 122, 255, 0.1);
+}
+
+.hero-btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 2px solid var(--text);
+}
+
+.hero-btn-secondary:hover {
+  background: var(--text);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+*:focus {
+  outline: 1px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background: var(--white);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card h2 {
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
