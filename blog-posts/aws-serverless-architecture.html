@@ -52,6 +52,12 @@
                                 <li class="breadcrumb-item active" aria-current="page">AWS Serverless</li>
                             </ol>
                         </nav>
+                        <div class="text-center mb-4">
+                            <picture>
+                                <source alt="Blog illustration" srcset="../blog.svg">
+                                <img src="../blog.svg" alt="Blog illustration" style="max-width: 150px; height: auto;">
+                            </picture>
+                        </div>
                         <h1 class="display-4 mb-3">AWS Serverless Architecture Patterns</h1>
                         <p class="text-muted mb-4">Published on February 28, 2025 • 7 min read</p>
                     </div>
@@ -76,11 +82,41 @@
                                 <p class="mb-4">Building serverless applications on AWS typically involves several key services:</p>
                                 
                                 <ul class="mb-4">
-                                    <li class="mb-2"><strong>AWS Lambda:</strong> Event-driven compute service</li>
-                                    <li class="mb-2"><strong>API Gateway:</strong> RESTful and WebSocket APIs</li>
-                                    <li class="mb-2"><strong>DynamoDB:</strong> NoSQL database</li>
-                                    <li class="mb-2"><strong>S3:</strong> Object storage</li>
-                                    <li class="mb-2"><strong>SQS/SNS:</strong> Messaging services</li>
+                                    <li class="mb-2"><strong>AWS Lambda:</strong> Event-driven compute service
+                                        <ul class="mt-2">
+                                            <li class="mb-1">Function as a Service (FaaS)</li>
+                                            <li class="mb-1">Automatic scaling</li>
+                                            <li class="mb-1">Pay-per-execution model</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2"><strong>API Gateway:</strong> RESTful and WebSocket APIs
+                                        <ul class="mt-2">
+                                            <li class="mb-1">Request/response transformation</li>
+                                            <li class="mb-1">Rate limiting and throttling</li>
+                                            <li class="mb-1">Authentication and authorization</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2"><strong>DynamoDB:</strong> NoSQL database
+                                        <ul class="mt-2">
+                                            <li class="mb-1">Single-digit millisecond latency</li>
+                                            <li class="mb-1">Built-in security and backup</li>
+                                            <li class="mb-1">Global tables for multi-region</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2"><strong>S3:</strong> Object storage
+                                        <ul class="mt-2">
+                                            <li class="mb-1">99.9% durability</li>
+                                            <li class="mb-1">Multiple storage classes</li>
+                                            <li class="mb-1">Event notifications</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2"><strong>SQS/SNS:</strong> Messaging services
+                                        <ul class="mt-2">
+                                            <li class="mb-1">SQS: Message queuing service</li>
+                                            <li class="mb-1">SNS: Pub/sub messaging</li>
+                                            <li class="mb-1">Event-driven architecture support</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                                 
                                 <h2 class="h3 mb-3 mt-5">Common Architecture Patterns</h2>
