@@ -7,6 +7,7 @@
     <meta name="description" content="Read the latest blog posts from Ain e Muhammad">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/common_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@100;200;300;400;500;600;700;800;900&display=swap" as="style">
 </head>
 <body>
@@ -33,15 +34,122 @@
             </div>
         </div>
     </nav>
+    <div class="alert alert-info alert-dismissible fade show m-0" role="alert">
+        <i class="fas fa-info-circle me-2"></i>
+        <strong>Disclaimer:</strong> Some content on this website is AI-generated for demonstration purposes.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
     <main id="main-content" role="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Blog</h1>
-                    <p>Content will be added here.</p>
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mb-5">
+                        <h1 class="display-4 mb-3">My Blog</h1>
+                        <p class="lead text-muted">Thoughts on technology, creativity, and the journey of learning</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-lg mb-5">
+                            <div class="card-body p-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="bg-dark rounded p-3 me-3">
+                                        <i class="fas fa-star text-white"></i>
+                                    </div>
+                                    <h2 class="h3 mb-0">Featured Post</h2>
+                                </div>
+                                <h3 class="h4 mb-3">The Future of Web Development: Embracing 3D Technologies</h3>
+                                <p class="text-muted mb-3">Published on March 15, 2025 • 5 min read</p>
+                                <p class="fs-5 mb-4">Exploring how Three.js and WebGL are revolutionizing user experiences on the web. From interactive product configurators to immersive storytelling, 3D web technologies are opening new possibilities for developers and designers alike.</p>
+                                <a href="blog-posts/future-web-development.html" class="btn hero-btn-primary">Read Full Post →</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-dark rounded p-3 me-3">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
+                            <h2 class="h3 mb-0">Recent Posts</h2>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-8">
+                                                <h3 class="h5 mb-2">Building Scalable React Applications</h3>
+                                                <p class="text-muted mb-2">March 10, 2025 • 4 min read</p>
+                                                <p class="text-muted">Best practices for structuring large React applications, state management, and performance optimization techniques that I've learned from building enterprise-scale projects.</p>
+                                            </div>
+                                            <div class="col-md-4 text-md-end">
+                                                <a href="blog-posts/scalable-react-applications.html" class="btn btn-outline-primary">Read More →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-8">
+                                                <h3 class="h5 mb-2">My Journey from Pakistan to SUNY Albany</h3>
+                                                <p class="text-muted mb-2">March 5, 2025 • 6 min read</p>
+                                                <p class="text-muted">Reflecting on the cultural and academic transition, the challenges of adapting to a new environment, and the opportunities that studying in the US has opened up.</p>
+                                            </div>
+                                            <div class="col-md-4 text-md-end">
+                                                <a href="blog-posts/journey-pakistan-albany.html" class="btn btn-outline-primary">Read More →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-8">
+                                                <h3 class="h5 mb-2">AWS Serverless Architecture Patterns</h3>
+                                                <p class="text-muted mb-2">February 28, 2025 • 7 min read</p>
+                                                <p class="text-muted">Deep dive into serverless computing patterns, Lambda functions, API Gateway, and how to build cost-effective, scalable applications using AWS services.</p>
+                                            </div>
+                                            <div class="col-md-4 text-md-end">
+                                                <a href="blog-posts/aws-serverless-architecture.html" class="btn btn-outline-primary">Read More →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-8">
+                                                <h3 class="h5 mb-2">The Philosophy of Code: Writing Software with Purpose</h3>
+                                                <p class="text-muted mb-2">February 20, 2025 • 5 min read</p>
+                                                <p class="text-muted">Exploring how philosophical thinking can improve our approach to software development, from ethical considerations to the art of writing clean, meaningful code.</p>
+                                            </div>
+                                            <div class="col-md-4 text-md-end">
+                                                <a href="blog-posts/philosophy-of-code.html" class="btn btn-outline-primary">Read More →</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
