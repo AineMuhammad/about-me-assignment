@@ -1,82 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Building Scalable React Applications - Ain e Muhammad</title>
-    <meta name="description" content="Best practices for structuring large React applications, state management, and performance optimization">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/common_styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@100;200;300;400;500;600;700;800;900&display=swap" as="style">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html" aria-label="Home">
-                <span class="brand-name">Ain e Muhammad</span>
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="../aboutme.html">About Me</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link active" href="../blog.html" aria-current="page">Blog</a>
-                    </li>
-                </ul>
-            </div>
+    <meta
+      name="description"
+      content="Best practices for structuring large React applications, state management, and performance optimization"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/common_styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      as="style"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="../index.html" aria-label="Home">
+          <span class="brand-name">Ain e Muhammad</span>
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="../aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="../blog.html" aria-current="page"
+                >Blog</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    
+
     <div class="alert alert-info alert-dismissible fade show m-0" role="alert">
-        <i class="fas fa-info-circle me-2"></i>
-        <strong>Disclaimer:</strong> Some content on this website is AI-generated for demonstration purposes.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <i class="fas fa-info-circle me-2"></i>
+      <strong>Disclaimer:</strong> Some content on this website is AI-generated
+      for demonstration purposes.
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
     </div>
     <main id="main-content" role="main">
-        <section class="py-5 bg-light">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                                <li class="breadcrumb-item"><a href="../blog.html">Blog</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">React Applications</li>
-                            </ol>
-                        </nav>
-                        <div class="text-center mb-4">
-                            <picture>
-                                <source alt="Blog illustration" srcset="../blog.svg">
-                                <img src="../blog.svg" alt="Blog illustration" style="max-width: 150px; height: auto;">
-                            </picture>
-                        </div>
-                        <h1 class="display-4 mb-3">Building Scalable React Applications</h1>
-                        <p class="text-muted mb-4">Published on March 10, 2025 • 4 min read</p>
-                    </div>
-                </div>
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="../index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="../blog.html">Blog</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    React Applications
+                  </li>
+                </ol>
+              </nav>
+              <div class="text-center mb-4">
+                <picture>
+                  <source alt="Blog illustration" srcset="../blog.svg" />
+                  <img
+                    src="../blog.svg"
+                    alt="Blog illustration"
+                    style="max-width: 60vw; height: auto"
+                  />
+                </picture>
+              </div>
+              <h1 class="display-4 mb-3">
+                Building Scalable React Applications
+              </h1>
+              <p class="text-muted mb-4">
+                Published on March 10, 2025 • 4 min read
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="py-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <article class="card border-0 shadow-lg">
-                            <div class="card-body p-5">
-                                <p class="fs-5 mb-4">Building React applications that can scale from prototype to enterprise-level systems requires careful planning and adherence to proven patterns. Here are the key strategies I've learned from building large-scale React applications.</p>
-                                
-                                <h2 class="h3 mb-3 mt-5">Project Structure</h2>
-                                <p class="mb-4">A well-organized project structure is the foundation of maintainable React applications. I recommend organizing by feature rather than by file type:</p>
-                                
-                                <pre class="bg-light p-3 rounded mb-4"><code>src/
+      <section class="py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <article class="card border-0 shadow-lg">
+                <div class="card-body p-5">
+                  <p class="fs-5 mb-4">
+                    Building React applications that can scale from prototype to
+                    enterprise-level systems requires careful planning and
+                    adherence to proven patterns. Here are the key strategies
+                    I've learned from building large-scale React applications.
+                  </p>
+
+                  <h2 class="h3 mb-3 mt-5">Project Structure</h2>
+                  <p class="mb-4">
+                    A well-organized project structure is the foundation of
+                    maintainable React applications. I recommend organizing by
+                    feature rather than by file type:
+                  </p>
+
+                  <pre class="bg-light p-3 rounded mb-4"><code>src/
   components/
     common/
     features/
@@ -89,38 +143,73 @@
     hooks/
     utils/
     constants/</code></pre>
-                                
-                                <h2 class="h3 mb-3 mt-5">State Management</h2>
-                                <p class="mb-4">For large applications, choosing the right state management solution is crucial. While Redux remains popular, I've found that a combination of React Context for global state and local state for component-specific data works well for most use cases.</p>
-                                
-                                <p class="mb-4">When Redux is necessary, I use Redux Toolkit to reduce boilerplate and ensure consistent patterns across the application.</p>
-                                
-                                <h2 class="h3 mb-3 mt-5">Performance Optimization</h2>
-                                <p class="mb-4">Performance becomes critical as applications grow. Key optimization strategies include:</p>
-                                
-                                <ul class="mb-4">
-                                    <li class="mb-2"><strong>React.memo:</strong> Prevent unnecessary re-renders</li>
-                                    <li class="mb-2"><strong>useMemo & useCallback:</strong> Optimize expensive calculations</li>
-                                    <li class="mb-2"><strong>Code splitting:</strong> Load components on demand</li>
-                                    <li class="mb-2"><strong>Lazy loading:</strong> Defer non-critical resources</li>
-                                </ul>
-                                
-                                <h2 class="h3 mb-3 mt-5">Testing Strategy</h2>
-                                <p class="mb-4">A comprehensive testing strategy is essential for maintaining code quality in large applications. I use a combination of unit tests (Jest), integration tests (React Testing Library), and end-to-end tests (Cypress).</p>
-                                
-                                <p class="mb-0">The key is to focus on testing user behavior rather than implementation details, ensuring that tests remain valuable even as the codebase evolves.</p>
-                            </div>
-                        </article>
-                        
-                        <div class="text-center mt-5">
-                            <a href="../blog.html" class="btn hero-btn-primary btn-lg">← Back to Blog</a>
-                        </div>
-                    </div>
+
+                  <h2 class="h3 mb-3 mt-5">State Management</h2>
+                  <p class="mb-4">
+                    For large applications, choosing the right state management
+                    solution is crucial. While Redux remains popular, I've found
+                    that a combination of React Context for global state and
+                    local state for component-specific data works well for most
+                    use cases.
+                  </p>
+
+                  <p class="mb-4">
+                    When Redux is necessary, I use Redux Toolkit to reduce
+                    boilerplate and ensure consistent patterns across the
+                    application.
+                  </p>
+
+                  <h2 class="h3 mb-3 mt-5">Performance Optimization</h2>
+                  <p class="mb-4">
+                    Performance becomes critical as applications grow. Key
+                    optimization strategies include:
+                  </p>
+
+                  <ul class="mb-4">
+                    <li class="mb-2">
+                      <strong>React.memo:</strong> Prevent unnecessary
+                      re-renders
+                    </li>
+                    <li class="mb-2">
+                      <strong>useMemo & useCallback:</strong> Optimize expensive
+                      calculations
+                    </li>
+                    <li class="mb-2">
+                      <strong>Code splitting:</strong> Load components on demand
+                    </li>
+                    <li class="mb-2">
+                      <strong>Lazy loading:</strong> Defer non-critical
+                      resources
+                    </li>
+                  </ul>
+
+                  <h2 class="h3 mb-3 mt-5">Testing Strategy</h2>
+                  <p class="mb-4">
+                    A comprehensive testing strategy is essential for
+                    maintaining code quality in large applications. I use a
+                    combination of unit tests (Jest), integration tests (React
+                    Testing Library), and end-to-end tests (Cypress).
+                  </p>
+
+                  <p class="mb-0">
+                    The key is to focus on testing user behavior rather than
+                    implementation details, ensuring that tests remain valuable
+                    even as the codebase evolves.
+                  </p>
                 </div>
+              </article>
+
+              <div class="text-center mt-5">
+                <a href="../blog.html" class="btn hero-btn-primary btn-lg"
+                  >← Back to Blog</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
