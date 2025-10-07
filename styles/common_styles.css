@@ -2,10 +2,10 @@
 
 :root {
   --blue: #00264f;
-  --text: #1D1D1F;
-  --text-muted: #86868B;
-  --bg: #FCFCFC;
-  --white: #FFFFFF;
+  --text: #1d1d1f;
+  --text-muted: #86868b;
+  --bg: #fcfcfc;
+  --white: #ffffff;
 }
 
 body {
@@ -88,7 +88,8 @@ body {
 }
 
 @keyframes gentle-pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
@@ -236,7 +237,11 @@ ol {
 }
 
 .highlight-box {
-  background: linear-gradient(135deg, rgba(0, 38, 79, 0.1) 0%, rgba(0, 38, 79, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 38, 79, 0.1) 0%,
+    rgba(0, 38, 79, 0.05) 100%
+  );
   border: 1px solid rgba(0, 38, 79, 0.2);
   border-radius: 12px;
   padding: 1.5rem;
@@ -258,7 +263,12 @@ ol {
 
 .section-divider {
   height: 2px;
-  background: linear-gradient(90deg, transparent 0%, var(--blue) 50%, transparent 100%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--blue) 50%,
+    transparent 100%
+  );
   margin: 3rem 0;
   border: none;
 }
@@ -275,7 +285,7 @@ ol {
 }
 
 #hero-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -289,4 +299,21 @@ ol {
 #hero-section > * {
   position: relative;
   z-index: 1;
+}
+
+.text-typewriter {
+  border-right: 2px solid var(--text, #000);
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 2s steps(10, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 5em;
+  }
 }
